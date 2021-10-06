@@ -29,7 +29,7 @@ The user needs to install node.js, npm and the inquirer npm module.
 
 Once all the pre-requisites are installed, the user runs the node index.js command from the folder and answers the questions presented.
 
-[download the demo video](../media/readme-demo.webm)
+[download the demo video](./assets/media/readme-demo.mp4)
 
 ## Contributions
 
