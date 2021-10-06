@@ -1,32 +1,54 @@
 const licenses = require("./Licenses");
-const md= (project, ID, description, license) => {
+const md= (projectName, userID, motivation, solution, lessonsLearned, installation, usage, demo, collaborators, thirdParty, tests, license) => {
 return    `
-![badges](https://img.shields.io/github/languages/top/${ID}/${project})
+![language](https://img.shields.io/github/languages/top/${userID}/${projectName})
+![license](https://img.shields.io/github/license/${userID}/${projectName})
 
-# ${project}
+
+# ${projectName}
 
 ## Description
-${description}
+
+${motivation}
+
+${solution}
+
+${lessonsLearned}
 
 ## Table of Contents
 1. [Installation](#installation)
 2. [Usage](#usage)
-3. [License](#license)
-4. [Contributions](#contributions)
-5. [Tests](#tests)
-6. [Questions and Contact Info](#questions-and-contact-info)
+3. [Contributions](#contributions)
+4. [Tests](#tests)
+5. [Questions and Contact Info](#questions-and-contact-info)
+6. [License](#license)
 
 ## Installation
 
+${installation}
+
 ## Usage
 
-## License
-${licenses.licenseType(license, ID, project)}
+${usage}
+
+![demo](${demo})
+
 ## Contributions
+
+${collaborators}
+
+${thirdParty}
 
 ## Tests
 
+${tests}
+
 ## Questions and Contact Info
+
+Contact me at: https://github.com/${userID}
+
+## License
+${licenses.licenseType(license, userID, projectName)}
 `
 };
 module.exports = { md };
